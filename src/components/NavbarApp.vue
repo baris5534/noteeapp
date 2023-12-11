@@ -1,6 +1,6 @@
 <template>
     <div class="w-full bg-slate-900">
-        <div class="lg:container justify-between px-20 py-5 flex mx-auto bg-red-500">
+        <div class="lg:container justify-between px-20 py-5 flex mx-auto text-white">
             <span>LOGO</span>
         <div>
             <ul>

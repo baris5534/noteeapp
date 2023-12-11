@@ -22,7 +22,12 @@ const routes = [
     path: '/login',
     name:'login',
     component:() => import('../views/HomeApp.vue')
-  }
+  },
+  {
+    path:'/note',
+    name:'note',
+    component:() => import('../views/NoteSection.vue')
+  },
 ]
 
 const router = new VueRouter({
