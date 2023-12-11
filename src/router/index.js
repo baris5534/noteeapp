@@ -28,6 +28,11 @@ const routes = [
     name:'note',
     component:() => import('../views/NoteSection.vue')
   },
+  {
+    path:'/user',
+    name:'user',
+    component: () => import('../views/UserView.vue')
+  }
 ]
 
 const router = new VueRouter({
