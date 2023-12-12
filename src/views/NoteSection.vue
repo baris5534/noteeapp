@@ -2,39 +2,30 @@
     <div>
         <NavbarApp />
         <div class="container mx-auto">
-            <div class="grid grid-cols-6 ">
-                <div class="col-span-5 w-10/12 flex flex-col items-center mx-auto  border-r-2 h-screen">
+            <div class="grid grid-cols-10">
+                <header class="col-span-8 w-10/12 flex flex-col items-center mx-auto">
                     <div class=" w-10/12 max-h-80 text-black m-2 rounded-md flex flex-col p-5">
-                        <button class="bg-green-600 p-2 rounded-xl align-top mx-2 flex h-10 w-28"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                    class="w-6 h-6">
-                                    <path fill-rule="evenodd"
-                                        d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                Yeni Not</button>
-                                <ModalnewNote>
-                                    <h2>modal</h2>
-                                </ModalnewNote>
-                                <h2>Notlarım</h2>
-
-                                <div class="w-2/3 border-2 p-3 flex flex-col justify-between">
-                                    <div class="flex justify-between border-2 py-2 px-4 mt-2">
-                                        <span>başlık</span>
-                                        <span>not</span>
-                                        <span>tarih</span>
-                                    </div>
-                                    <div class="flex justify-between border-2 py-2 px-4 mt-2">
-                                        <span>başlık</span>
-                                        <span>not</span>
-                                        <span>tarih</span>
-                                    </div>
-                                    <div class="flex justify-between border-2 py-2 px-4 mt-2">
-                                        <span>başlık</span>
-                                        <span>not</span>
-                                        <span>tarih</span>
-                                    </div>
-                                </div>
+                        <ModalnewNote>
+                            <h2>modal</h2>
+                        </ModalnewNote>
+                        <h2 class="text-left text-xl font-semibold">Notlarım</h2>
+                        
+                        <div class="w-2/3 border-2 rounded-lg p-3 flex flex-col justify-between">
+                            <AccordionMenu class="mb-4 border-2 mt-2 rounded-xl">
+                            <template v-slot:title>
+                                <span class="font-semibold">{{ baslik }}</span>
+                            </template>
+                            <template v-slot:content>
+                                <p class="p-3 border-t-2 text-left">
+                                    {{notIcerigi}}<br/>
+                                    <span class="float-right">{{ kaydedilenTarih }}</span>
+                                </p>
+                            </template>
+                           
+                        </AccordionMenu>
+                        
+                        </div>
+                        
                         <!-- <div class="flex">
                             <input type="text" name="" id="" placeholder="Not Ekleyin..."
                                 class="border-2  rounded-lg break-wrap w-4/6 h-48 text-black">
@@ -75,9 +66,9 @@
                             </li>
                         </ul>
                     </div> -->
-                </div>
+                </header>
 
-                <SideBar class="col-span-1" />
+                <SideBar class="col-span-2 px-10 float-left border-l-2" />
             </div>
         </div>
     </div>
@@ -87,19 +78,34 @@
 import NavbarApp from '@/components/NavbarApp.vue'
 import SideBar from '@/components/SideBar.vue'
 import ModalnewNote from '@/components/ModalnewNote.vue'
+import AccordionMenu from '@/components/AccordionMenu.vue'
 export default {
     name: 'NoteSection',
     components: {
         NavbarApp,
         SideBar,
         ModalnewNote,
+        AccordionMenu,
+    },
+    data(){
+        return{
+            notbasligi:'not1',
+            noticerigi:'bhbjhvjhvk',
+            nottarihi:'12:12:2023',
+        }
     },
     methods: {
-    openModal() {
-      this.$refs.ModalnewNote.open();
+        openModal() {
+            this.$refs.ModalnewNote.open();
+        },
+        bugununTarihiniKaydet(){
+            const bugununTarihi = new Date();
+            const tarihFormati = {day:'numeric',mont:'long',year:'numeric'};
+            const formatliTarih = bugununTarihi.toLocaleDateString('tr-TR',tarihFormati);
+            this.kaydedilenTarih = formatliTarih
+        },
     },
- },
-}
+};
 
 </script>
 

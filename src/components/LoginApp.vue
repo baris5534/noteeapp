@@ -1,5 +1,5 @@
 <template>
-    <div class="font-bold rounded-md bg-blue-400 w-72 mx-auto h-64 p-3 flex flex-col justify-between">
+    <div class="font-semibold rounded-md bg-blue-400 w-72 mx-auto h-64 p-3 flex flex-col justify-between">
         <span>GİRİŞ YAPINIZ</span>
             <input type="text" name="" id="" placeholder="Name" class="p-3 rounded-md">
             <input type="password" name="" id="" placeholder="Password" class="p-3 rounded-md">
