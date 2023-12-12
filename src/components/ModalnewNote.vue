@@ -65,16 +65,7 @@ export default {
             this.isOpen = !this.isOpen;
         },
         notuKaydet(){
-            if(this.baslik && this.notIcerigi){
-                const yeniNot = {
-                    id:this.notIdCounter++,
-                    baslik:this.baslik,
-                    icerik:this.notIcerigi,
-                };
-                this.notlar.push(yeniNot);
-                this.baslik="";
-                this.notIcerigi = "";
-            }
+            
         },
     },
 };
