@@ -20,7 +20,7 @@ import SideBar from '@/components/SideBar.vue'
         name: 'HomeApp',
         components: {
         NavbarApp,
-        SideBar
+        SideBar,
         },
         data(){
             return{

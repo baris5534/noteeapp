@@ -1,0 +1,58 @@
+{
+    "projects":[
+        {
+            "id":1,
+            "title": "Okul notlarım",
+            "notedetail":"tarih perfonmansı yapılcak , proje ödevlerine bak",
+            "notedate":"13:12:2023",
+            "complete":true
+        },
+        {
+            "id":2,
+            "title": "Ofis Yapılacaklar",
+            "notedetail":"Temizlik yapılcak",
+            "notedate":"13:12:2023",
+            "complete":true
+        },
+        {
+            "id":3,
+            "title": "Hayat notlarım",
+            "notedetail":"Yaşamaya bak takma kafana",
+            "notedate":"13:12:2023",
+            "complete":true
+        },
+        {
+            "id":4,
+            "title": "bilgisayar notlarım",
+            "notedetail":"steam ets discord",
+            "notedate":"13:12:2023",
+            "complete":true
+        }
+    ],
+    "users":[
+        {
+            "id":1,
+            "name": "Barış Yıldız",
+            "password":"123456",
+            "complete":true
+        },
+        {
+            "id":2,
+            "name": "Ferhat Kuş",
+            "password":"5534",
+            "complete":true
+        },
+        {
+            "id":3,
+            "name": "Salim Şanver",
+            "password":"123456",
+            "complete":true
+        },
+        {
+            "id":4,
+            "name": "Alparslan Terzi",
+            "password":"123456",
+            "complete":true
+        }
+    ]
+}

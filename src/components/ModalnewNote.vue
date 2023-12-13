@@ -25,7 +25,7 @@
                                 class="border-2 w-2/3 h-48 placeholder:text-left placeholder:absolute placeholder:top-0 pl-4 pt-4 top-0  left-0 relative p-2 rounded-lg my-2 text-ellipsis">
                         </div>
                         <div class="p-3 mt-2 text-center space-x-4 md:block">
-                            <button @click="notuKaydet"
+                            <button @click="notuKaydet" type="submit"
                                 class="mb-2 md:mb-0 bg-green-500 px-5 py-2 text-sm shadow-sm font-medium tracking-wider border-2 text-white rounded-md hover:shadow-lg hover:bg-green-600">
                                 Kaydet
                             </button>
@@ -47,10 +47,8 @@ export default {
     data() {
         return {
             isOpen: false,
-            baslik:"",
-            notIcerigi:'',
-            notlar:[],
-            notIdCounter:1,
+            title:'',
+            notedetail:'',
         };
     },
 
@@ -67,6 +65,7 @@ export default {
         notuKaydet(){
             
         },
+        
     },
 };
 </script>
