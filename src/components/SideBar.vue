@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen">
+    <div class="h-">
         <div class="">
             <ul class="w-6/6 mx-auto m-5 border-2 p-3 rounded-lg text-left">
                 <button class=" flex bg-slate-300 hover:bg-slate-200">
@@ -55,5 +55,9 @@ button{
     margin-top: 10px;
     padding: 5px;
     border-radius: 12px;
+}
+div button.router-link-exact-active{
+    background-color: red;
+    color: red;
 }
 </style>

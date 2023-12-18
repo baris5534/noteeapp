@@ -27,8 +27,15 @@ const routes = [
   {
     path:'/user',
     name:'user',
-    component: () => import('../views/UserView.vue')
-  }
+    component: () => import('../views/UserView.vue'),
+    props:true
+  },
+  {
+    path:'/Notedetails/:id',
+    name:'NoteDetails',
+    component:() => import('../views/NoteDetails'),
+    props:true
+  },
 ]
 
 const router = new VueRouter({
