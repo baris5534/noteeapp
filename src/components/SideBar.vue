@@ -1,7 +1,7 @@
 <template>
     <div class="bg-slate-500 h-screen">
         <div class="h-full flex flex-col justify-between">
-            <ul class="mt-20 w-full mx-auto m-5 border-2 p-3 rounded-lg text-left">
+            <ul class="mt-20 w-full mx-auto m-5 p-3 rounded-lg text-left">
                 <button class=" flex bg-slate-300 hover:bg-slate-200">
                     <router-link to="/home" class="w-full flex">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-1">
