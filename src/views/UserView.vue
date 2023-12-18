@@ -1,10 +1,10 @@
 <template>
     <div>
         <NavbarApp />
-        <div class="container mx-auto">
+        <div class="w-full">
             <div class="grid grid-cols-12">
                 <header class="col-span-10 w-10/12 flex flex-col items-center mx-auto mt-20">
-                    <div class=" w-10/12 max-h-80 text-black m-2 rounded-md flex flex-col p-5">
+                    <div class=" w-full text-black m-2 rounded-md flex flex-col p-5 bg-slate-500">
                         <ModalnewUser>
                             <h2>modal</h2>
                         </ModalnewUser>

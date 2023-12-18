@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavbarApp/>
-        <div class="container mx-auto">
+        <div class="w-full">
             <div class="grid grid-cols-10">
                 <div class="col-span-8 mt-20">
                     <h2 class="text-2xl">Anasayfa</h2>
