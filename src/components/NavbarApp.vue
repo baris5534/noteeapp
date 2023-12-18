@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-slate-900">
+    <div class="w-full bg-slate-900 absolute">
         <div class="lg:container justify-between px-20 py-5 flex mx-auto text-white">
             <span>LOGO</span>
         <div>

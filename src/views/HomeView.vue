@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home bg-slate-800">
     <div class="h-screen flex items-center">
       <LoginApp class=""/>
     </div>

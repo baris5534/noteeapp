@@ -1,9 +1,9 @@
 <template>
     <div>
         <NavbarApp />
-        <div class="w-full ">
+        <div class="w-full">
             <div class="grid grid-cols-12">
-                <header class="col-span-10 flex flex-col items-center mx-auto">
+                <header class="col-span-10 flex flex-col items-center mx-auto mt-20">
                     <div class=" text-black m-2 rounded-md flex flex-col p-5">
                         <ModalnewNote>
                             <h2>modal</h2>

@@ -3,7 +3,7 @@
         <NavbarApp/>
         <div class="container mx-auto">
             <div class="grid grid-cols-10">
-                <div class="col-span-8">
+                <div class="col-span-8 mt-20">
                     <h2 class="text-2xl">Anasayfa</h2>
                 </div>
                 <SideBar class="col-span-2 px-10 float-left border-l-2"/>
