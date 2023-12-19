@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <div class="h-screen flex items-center">
+  <div class="home overflow-hidden">
+    <div class="h-screen flex left-0 right-0 top-0 items-center absolute">
       <LoginApp class=""/>
     </div>
     

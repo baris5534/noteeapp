@@ -4,8 +4,10 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import './assets/tailwind.css'
+import VueSweetalert2 from 'vue-sweetalert2';
 
 Vue.config.productionTip = false
+Vue.use(VueSweetalert2);
 
 new Vue({
   router,

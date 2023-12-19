@@ -7,7 +7,11 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta:{
+      hideNavbar:true,
+      hideSidebar:true,
+    }
   },
   {
     path: '/login',
@@ -28,12 +32,6 @@ const routes = [
     path:'/user',
     name:'user',
     component: () => import('../views/UserView.vue'),
-    props:true
-  },
-  {
-    path:'/Notedetails/:id',
-    name:'NoteDetails',
-    component:() => import('../views/NoteDetails'),
     props:true
   },
 ]
