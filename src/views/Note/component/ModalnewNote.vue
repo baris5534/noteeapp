@@ -61,8 +61,6 @@ export default {
     data() {
         return {
             isOpen: false,
-            title: '',
-            notedetail: '',
         };
     },
 

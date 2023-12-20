@@ -60,19 +60,13 @@
 </template>
 
 <script>
-// import NavbarApp from '@/components/NavbarApp.vue'
-// import SideBar from '@/components/SideBar.vue'
-import ModalnewUser from '@/components/ModalnewUser.vue'
-// import AccordionMenu from '@/components/AccordionMenu.vue'
-import EditUser from '@/components/EditUser.vue'
-import DelNote from '@/components/DelNote.vue'
+import ModalnewUser from '../User/component/ModalnewUser.vue'
+import EditUser from '../User/component/EditUser.vue'
+import DelNote from '../Note/component/DelNote.vue'
 export default {
     name: 'UserView',
     components: {
-        // NavbarApp,
-        // SideBar,
         ModalnewUser,
-        // AccordionMenu,
         EditUser,
         DelNote,
     },
@@ -107,12 +101,6 @@ export default {
             ]
         }
     },
-    // mounted() {
-    //     fetch('http://localhost:3000/users')
-    //         .then(res => res.json())
-    //         .then(data => this.users = data)
-    //         .catch(err => console.log(err.message))
-    // },
 }
 </script>
 

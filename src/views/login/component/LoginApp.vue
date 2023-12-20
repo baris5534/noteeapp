@@ -3,7 +3,7 @@
         <span>GİRİŞ YAPINIZ</span>
             <input type="text" name="" id="" placeholder="Name" class="p-2 rounded-md" value="Barış Yıldız">
             <input type="password" name="" id="" placeholder="Password" class="p-2 rounded-md" value="123456">
-        <router-link to="/login" class="mx-auto flex font-bold w-full py-2 text-center px-20 rounded-md bg-gray-300 hover:bg-gray-200">GİRİŞ YAP</router-link>
+        <router-link to="/home" class="mx-auto flex font-bold w-full py-2 text-center px-20 rounded-md bg-gray-300 hover:bg-gray-200">GİRİŞ YAP</router-link>
     </div>
 </template>
 

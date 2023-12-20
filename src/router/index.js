@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/login/HomeView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -16,23 +16,22 @@ const routes = [
   {
     path: '/login',
     name:'login',
-    component:() => import('../views/HomeApp.vue')
+    component:() => import('../views/login/component/LoginApp.vue')
   },
   {
     path:'/home',
     name:'/home',
-    component:() => import('../views/HomeApp.vue')
+    component:() => import('../views/home/HomeApp.vue')
   },
   {
     path:'/note',
     name:'note',
-    component:() => import('../views/NoteSection.vue')
+    component:() => import('../views/Note/NoteSection.vue')
   },
   {
     path:'/user',
     name:'user',
-    component: () => import('../views/UserView.vue'),
-    props:true
+    component: () => import('../views/User/UserView.vue'),
   },
 ]
 

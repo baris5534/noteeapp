@@ -9,7 +9,6 @@
                 <SideBar v-if="!$route.meta.hideSidebar" class="col-span-2 float-left border-l-2" />
             </div>
         </div>
-    
   </div>
 </template>
 <script>
